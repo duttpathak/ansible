@@ -1,0 +1,8 @@
+# vars file for motd
+---
+# main_yml:
+#   src: 
+#   dest: 
+
+src: main.yml
+dst: /tmp

@@ -1,0 +1,12 @@
+
+# - name: Execute arbitrary roles
+ # hosts: localhost
+  #roles:
+   # - copy-file
+
+
+---
+- name: Execute arbitrary roles
+  hosts: localhost
+  roles:
+    - Install-Nginx

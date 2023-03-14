@@ -1,0 +1,19 @@
+
+# tasks file for Intall-Nginx
+
+  # - name: "Install Nginx to version {{ nginx_version }}"
+  #   ansible.builtin.shell:
+  #     name: "nginx={{ nginx_version }}"
+  #     state: started
+
+# ---
+# - hosts: localhost
+#     name: Nginx
+#     state: started
+
+---
+# tasks file for install-nginx
+- name: Install Nginx on Homebrew (Mac OSX) systems
+  homebrew:
+    name: nginx
+  when: ansible_os_family == 'Darwin'

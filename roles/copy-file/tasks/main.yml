@@ -1,0 +1,11 @@
+---
+# - name: copy main.yml
+#   copy:
+#     src: main.yml
+#     dest: /tmp
+
+
+- name: Copy "{{ src }}"
+  copy: 
+    src: "{{ src }}"
+    dest: "{{ dst }}"

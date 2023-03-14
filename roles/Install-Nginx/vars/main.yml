@@ -1,0 +1,4 @@
+---
+# vars file for Intall-Nginx
+
+nginx_version: 1.19
