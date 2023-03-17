@@ -5,8 +5,14 @@
    # - copy-file
 
 
----
+# ---
+# - name: Execute arbitrary roles
+#   hosts: localhost
+#   roles:
+#     - Install-Nginx
+
 - name: Execute arbitrary roles
   hosts: localhost
   roles:
-    - Install-Nginx
+    - hashicorp consul
+
