@@ -1,0 +1,5 @@
+---
+- name: Install consul on Homebrew (Mac OSX) systems
+  homebrew:
+    name: consul
+  when: ansible_os_family == 'Darwin'
